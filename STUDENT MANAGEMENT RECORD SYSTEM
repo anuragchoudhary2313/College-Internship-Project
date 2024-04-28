@@ -1,0 +1,179 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_STUDENTS 100
+
+struct Student
+{
+    char rollNumber[20];
+    char name[50];
+    char course[50];
+    char branch[50];
+    int year;
+    int semester;
+    float cgpa;
+};
+
+struct Student students[MAX_STUDENTS];
+int numStudents = 0;
+
+void addStudent()
+{
+    if (numStudents == MAX_STUDENTS)
+    {
+        printf("Maximum number of students reached!\n");
+        return;
+    }
+
+    struct Student newStudent;
+
+    printf("Enter roll number: ");
+    scanf(" %[^\n]", newStudent.rollNumber);
+
+    printf("Enter student name: ");
+    scanf(" %[^\n]", newStudent.name);
+
+    printf("Enter student course: ");
+    scanf(" %[^\n]", newStudent.course);
+
+    printf("Enter student branch: ");
+    scanf(" %[^\n]", newStudent.branch);
+
+    printf("Enter student year: ");
+    scanf("%d", &newStudent.year);
+
+    printf("Enter student semester: ");
+    scanf("%d", &newStudent.semester);
+
+    printf("Enter student CGPA: ");
+    scanf("%f", &newStudent.cgpa);
+
+    students[numStudents++] = newStudent;
+
+    printf("Student record added successfully!\n");
+}
+
+void deleteStudent()
+{
+    char rollNumber[20];
+    int i, found = 0;
+
+    printf("Enter roll number to delete: ");
+    scanf(" %[^\n]", rollNumber);
+
+    for (i = 0; i < numStudents; i++)
+    {
+        if (strcmp(students[i].rollNumber, rollNumber) == 0)
+        {
+            found = 1;
+            break;
+        }
+    }
+
+    if (found)
+    {
+        for (; i < numStudents - 1; i++)
+        {
+            students[i] = students[i + 1];
+        }
+
+        numStudents--;
+
+        printf("Student record deleted successfully!\n");
+    }
+    else
+    {
+        printf("Student record not found!\n");
+    }
+}
+void searchStudent()
+{
+    char rollNumber[20];
+    int i, found = 0;
+
+    printf("Enter roll number to search: ");
+    scanf(" %[^\n]", rollNumber);
+
+    for (i = 0; i < numStudents; i++)
+    {
+        if (strcmp(students[i].rollNumber, rollNumber) == 0)
+        {
+            found = 1;
+            break;
+        }
+    }
+
+    if (found)
+    {
+        printf("Roll Number: %s\n", students[i].rollNumber);
+        printf("Student Name: %s\n", students[i].name);
+        printf("Student Course: %s\n", students[i].course);
+        printf("Student Branch: %s\n", students[i].branch);
+        printf("Student Year: %d\n", students[i].year);
+        printf("Student Semester: %d\n", students[i].semester);
+        printf("Student CGPA: %.2f\n", students[i].cgpa);
+    }
+    else
+    {
+        printf("Student record not found!\n");
+    }
+}
+
+void displayAllStudents()
+{
+    if (numStudents == 0)
+    {
+        printf("No student records found!\n");
+        return;
+    }
+
+    printf("Student Records:\n");
+    printf("Roll Number\tName\t\tCourse\t\tBranch\t\tYear\t\tSemester\tCGPA\n");
+    printf("-------------------------------------------------------------------------------------------------------\n");
+
+    for (int i = 0; i < numStudents; i++)
+    {
+        printf("%s\t\t%s\t\t%s\t\t%s\t\t%d\t\t%d\t\t%.2f\n", students[i].rollNumber, students[i].name, students[i].course, students[i].branch, students[i].year, students[i].semester, students[i].cgpa);
+    }
+}
+
+int main()
+{
+    int choice;
+
+    while (1)
+    {
+        printf("\nStudent Record Management System\n");
+        printf("1. Add Student\n");
+        printf("2. Delete Student\n");
+        printf("3. Search Student\n");
+        printf("4. Display All Students\n");
+        printf("5. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice)
+        {
+        case 1:
+            addStudent();
+            break;
+        case 2:
+            deleteStudent();
+            break;
+        case 3:
+            searchStudent();
+            break;
+        case 4:
+            displayAllStudents();
+            break;
+        case 5:
+            printf("Exiting... Goodbye!\n");
+            exit(0);
+        default:
+            printf("Invalid choice! Please try again.\n");
+        }
+    }
+
+    return 0;
+}
