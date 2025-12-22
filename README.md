@@ -90,7 +90,7 @@ You need a C++ compiler (like G++ or MinGW) installed on your system.
   <em>Application screenshots coming soon...</em>
   
   <!-- To add a screenshot, replace this comment with:
-  <img src="path/to/your/screenshot.png" alt="Application Screenshot" width="700" />
+  <img src="assets/screenshots/main-interface.png" alt="Application Screenshot" width="700" />
   -->
 </div>
 
