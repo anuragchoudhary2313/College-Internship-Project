@@ -64,38 +64,50 @@ You need a C++ compiler (like G++ or MinGW) installed on your system.
 
 1. **Clone the repository**
    ```bash
-   git clone [https://github.com/anuragchoudhary2313/College-Internship-Project.git](https://github.com/anuragchoudhary2313/College-Internship-Project.git)
-Navigate to the project directory
+   git clone https://github.com/anuragchoudhary2313/College-Internship-Project.git
+   ```
 
-Bash
+2. **Navigate to the project directory**
+   ```bash
+   cd "College-Internship-Project/STUDENT MANAGEMENT RECORD SYSTEM"
+   ```
 
-cd "College-Internship-Project/STUDENT MANAGEMENT RECORD SYSTEM"
-Compile the code
+3. **Compile the code**
+   ```bash
+   g++ main.cpp -o student_system
+   ```
+   > **Note:** Replace `main.cpp` with the actual name of your C++ file if it's different.
 
-Bash
+4. **Run the application**
+   ```bash
+   ./student_system
+   ```
+---
 
-g++ main.cpp -o student_system
-(Note: Replace main.cpp with the actual name of your C++ file if it's different)
+### 📸 Screenshots
 
-Run the application
+<div align="center">
+  <em>Application screenshots coming soon...</em>
+  
+  <!-- To add a screenshot, replace this comment with:
+  <img src="assets/screenshots/main-interface.png" alt="Application Screenshot" width="700" />
+  -->
+</div>
 
-Bash
+---
 
-./student_system
-📸 Screenshots
-<div align="center"> <img src="https://www.google.com/search?q=https://via.placeholder.com/700x350%3Ftext%3DApplication%2BScreenshot%2BPlaceholder" alt="Screenshot" /> </div>
+### 🔮 Future Scope
 
-🔮 Future Scope
-[ ] GUI Implementation: Upgrading from console to a graphical interface using Qt or wxWidgets.
+- [ ] **GUI Implementation:** Upgrading from console to a graphical interface using Qt or wxWidgets.
+- [ ] **Database Integration:** Moving from file handling to SQL/SQLite for better scalability.
+- [ ] **Student Auth:** Adding a login system for students to view their own results.
 
-[ ] Database Integration: Moving from file handling to SQL/SQLite for better scalability.
-
-[ ] Student Auth: Adding a login system for students to view their own results.
+---
 
 <div align="center">
 
-Created by Anurag Choudhary
+**Created by Anurag Choudhary**
 
-<a href="https://www.linkedin.com/in/anurag-choudhary-4291a228a/"> <img src="https://www.google.com/search?q=https://img.shields.io/badge/LinkedIn-Connect-0A66C2%3Fstyle%3Dfor-the-badge%26logo%3Dlinkedin" alt="LinkedIn" /> </a> <a href="mailto:anuragchoudhary603@gmail.com"> <img src="https://www.google.com/search?q=https://img.shields.io/badge/Email-Contact%2520Me-D14836%3Fstyle%3Dfor-the-badge%26logo%3Dgmail%26logoColor%3Dwhite" alt="Email" /> </a>
+<a href="https://www.linkedin.com/in/anurag-choudhary-4291a228a/"> <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" /> </a> <a href="mailto:anuragchoudhary603@gmail.com"> <img src="https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /> </a>
 
 </div>
