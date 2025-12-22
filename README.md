@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00c2cb&height=250&section=header&text=Student%20Management%20System&fontSize=50&animation=fadeIn&fontAlignY=38&desc=Efficient%20Record%20Handling%20&%20Data%20Management&descAlignY=55&descAlign=50" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00c2cb&height=250&section=header&text=Student%20Management%20System&fontSize=50&animation=fadeIn&fontAlignY=38&desc=Efficient%20Record%20Management&descAlignY=51&descAlign=62" alt="Header" />
   
   <br />
 
@@ -23,7 +23,7 @@
 
 ### 📘 About The Project
 
-The **Student Management Record System** is a robust console-based application designed to streamline the administrative tasks of educational institutions. It allows administrators to maintain an organized database of students, handling everything from admission records to academic performance tracking.
+The **Student Management Record System** is a robust console-based application designed to streamline the administrative tasks of educational institutions. It allows administrators to maintain an organized database of student information efficiently.
 
 This project demonstrates the practical application of **File Handling** and **Object-Oriented Programming (OOP)** concepts to solve real-world data management problems.
 
@@ -33,7 +33,7 @@ This project demonstrates the practical application of **File Handling** and **O
 
 | Feature | Description |
 | :--- | :--- |
-| 🆕 **Add Records** | Create new student profiles with details like Roll No, Name, and Marks. |
+| 🆕 **Add Records** | Create new student profiles with details like Roll No, Name, and Marks.  |
 | 🔍 **Search & View** | Quickly retrieve student details using their unique Roll Number. |
 | ✏️ **Modify Records** | Update existing information easily without data loss. |
 | ❌ **Delete Records** | Remove obsolete or incorrect records from the database securely. |
@@ -55,47 +55,58 @@ This project demonstrates the practical application of **File Handling** and **O
 
 ### 🚀 Getting Started
 
-Follow these steps to set up the project locally.
+Follow these steps to set up the project locally. 
 
 #### Prerequisites
-You need a C++ compiler (like G++ or MinGW) installed on your system.
+You need a C++ compiler (like G++ or MinGW) installed on your system. 
 
 #### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone [https://github.com/anuragchoudhary2313/College-Internship-Project.git](https://github.com/anuragchoudhary2313/College-Internship-Project.git)
-Navigate to the project directory
+   git clone https://github.com/anuragchoudhary2313/College-Internship-Project.git
+   ```
 
-Bash
+2. **Navigate to the project directory**
+   ```bash
+   cd "College-Internship-Project/STUDENT MANAGEMENT RECORD SYSTEM"
+   ```
 
-cd "College-Internship-Project/STUDENT MANAGEMENT RECORD SYSTEM"
-Compile the code
+3. **Compile the code**
+   ```bash
+   g++ main.cpp -o student_system
+   ```
+   *(Note: Replace main.cpp with the actual name of your C++ file if it's different)*
 
-Bash
+4. **Run the application**
+   ```bash
+   ./student_system
+   ```
 
-g++ main.cpp -o student_system
-(Note: Replace main.cpp with the actual name of your C++ file if it's different)
+---
 
-Run the application
+### 📸 Screenshots
 
-Bash
+<div align="center">
+  <img src="https://via.placeholder.com/700x350? text=Application+Screenshot+Placeholder" alt="Screenshot" />
+</div>
 
-./student_system
-📸 Screenshots
-<div align="center"> <img src="https://www.google.com/search?q=https://via.placeholder.com/700x350%3Ftext%3DApplication%2BScreenshot%2BPlaceholder" alt="Screenshot" /> </div>
+---
 
-🔮 Future Scope
-[ ] GUI Implementation: Upgrading from console to a graphical interface using Qt or wxWidgets.
+### 🔮 Future Scope
 
-[ ] Database Integration: Moving from file handling to SQL/SQLite for better scalability.
+- [ ] **GUI Implementation:** Upgrading from console to a graphical interface using Qt or wxWidgets.
+- [ ] **Database Integration:** Moving from file handling to SQL/SQLite for better scalability. 
+- [ ] **Student Auth:** Adding a login system for students to view their own results.
 
-[ ] Student Auth: Adding a login system for students to view their own results.
+---
 
 <div align="center">
 
-Created by Anurag Choudhary
+**Created by Anurag Choudhary**
 
-<a href="https://www.linkedin.com/in/anurag-choudhary-4291a228a/"> <img src="https://www.google.com/search?q=https://img.shields.io/badge/LinkedIn-Connect-0A66C2%3Fstyle%3Dfor-the-badge%26logo%3Dlinkedin" alt="LinkedIn" /> </a> <a href="mailto:anuragchoudhary603@gmail.com"> <img src="https://www.google.com/search?q=https://img.shields.io/badge/Email-Contact%2520Me-D14836%3Fstyle%3Dfor-the-badge%26logo%3Dgmail%26logoColor%3Dwhite" alt="Email" /> </a>
+<a href="https://www.linkedin.com/in/anurag-choudhary-4291a228a/">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
 
 </div>
